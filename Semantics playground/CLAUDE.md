@@ -45,10 +45,19 @@ npm i
 npm run dev
 ```
 
+## Search Tool — Current State
+
+The search panel (`SearchChatPanel.tsx`) has two modes toggled via Prototype Settings:
+- **Toolbar locked** — compact bar anchored above the toolbar, same width
+- **Floating panel** — draggable panel, renders via React portal so it sits above the map
+
+Both modes are UI/prototype only — search results are hardcoded ("Herman Miller Aeron Chair ×6, 91% match"). Nothing is wired to the actual 3D scene yet.
+
 ## Next Steps
 
+- **Continue work on search tool** — next session pick up here
+- Wire text search to actually query/highlight objects in the 3D scene
+- Wire image search to real visual search logic
 - Implement Annotation tool (currently a stub)
 - Implement Semantics tool (currently a stub)
 - Wire Download tool to export data or screenshots
-- Replace hardcoded chair/desk/monitor metadata with dynamic object properties
-- Add area measurement mode (polygon) alongside distance
